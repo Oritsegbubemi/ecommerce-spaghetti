@@ -1,0 +1,30 @@
+[
+    {
+        "id": 0,
+        "product": "Grilled Spagetti",
+        "price": 300,
+        "image" : "spag",
+        "quantity" : 1
+    },
+    {
+        "id": 1,
+        "product": "Hot Fried Yam",
+        "price": 400,
+        "image" : "yam",
+        "quantity" : 1
+    },
+    {
+        "id": 2,
+        "product": "Special Beans",
+        "price": 300,
+        "image" : "beans",
+        "quantity" : 1
+    },
+    {
+        "id": 3,
+        "product": "Fried Rice",
+        "price": 500,
+        "image" : "rice",
+        "quantity" : 1
+    }
+    ]
