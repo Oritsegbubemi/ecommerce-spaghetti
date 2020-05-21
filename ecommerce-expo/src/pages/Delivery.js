@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import { StyleSheet, View, Text, ScrollView, Image } from 'react-native';
 import { Actions } from 'react-native-router-flux';
-import { Header, Icon, Title, Button, Left, Body } from 'native-base';
+import { Header, Title, Button, Left, Body } from 'native-base';
+import { Ionicons } from '@expo/vector-icons';
 
 export default class Delivery extends Component {
     onBackButtonPress() {
@@ -13,7 +14,7 @@ export default class Delivery extends Component {
                 <Header style={{ backgroundColor: '#f2960c' }} > 
                     <Left>
                         <Button transparent onPress={this.onBackButtonPress.bind(this)}>
-                            <Icon name='arrow-back' />
+                            <Ionicons name='md-arrow-back' style={styles.actionButtonIcon}/>
                         </Button>
                     </Left>
                     <Body style={styles.bodyStyle}>
@@ -118,10 +119,15 @@ const styles = StyleSheet.create({
         fontSize: 28,
         alignSelf: 'center',
         fontWeight: 'bold'
-      },
+    },
       bodyStyle: {
         flex: 3.5,
         justifyContent: 'center',
         alignItems: 'center'
-      }
+    },
+    actionButtonIcon: {
+        fontSize: 20,
+        height: 22,
+        color: 'white',
+    },
 });
