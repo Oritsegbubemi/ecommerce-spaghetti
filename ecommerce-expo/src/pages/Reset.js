@@ -3,6 +3,7 @@ import { StyleSheet, View, TextInput } from 'react-native';
 import { connect } from 'react-redux';
 import { Actions } from 'react-native-router-flux';
 import { Header, Icon, Title, Button, Left, Body } from 'native-base';
+import { Ionicons } from '@expo/vector-icons';
 import { emailChanged } from '../actions/LoginAction';
 import { Button2, Spinner } from '../common';
 
@@ -47,7 +48,7 @@ class Reset extends Component {
          > 
            <Left>
               <Button transparent onPress={this.onBackButtonPress.bind(this)}>
-                <Icon name='arrow-back' />
+                <Ionicons name='arrow-back' />
               </Button>
            </Left>
            <Body style={styles.bodyStyle}>

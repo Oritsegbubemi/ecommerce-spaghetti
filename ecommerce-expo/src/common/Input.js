@@ -1,6 +1,7 @@
 import React from 'react';
 import { StyleSheet, View, TextInput } from 'react-native'; 
 import { Icon } from 'native-base';
+import { Ionicons } from '@expo/vector-icons';
 
 const Input = ({ onChangeText, value, placeholder, secureTextEntry, autoCorrect, name }) => (
         <View style={styles.container}>
@@ -15,7 +16,7 @@ const Input = ({ onChangeText, value, placeholder, secureTextEntry, autoCorrect,
                 underlineColorAndroid='rgba(255,255,255,1)'
             />
             <View style={styles.visibilityBtn} >
-                <Icon 
+                <Ionicons 
                     name={name}
                     style={{ color: 'white' }}
                 />

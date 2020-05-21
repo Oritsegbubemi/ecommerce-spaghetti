@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import { StyleSheet, View, Text, TextInput, ScrollView } from 'react-native';
-import { Header, Icon, Title, Button, Left, Body } from 'native-base';
+import { Header, Title, Button, Left, Body } from 'native-base';
 import { Actions } from 'react-native-router-flux';
 import { Card, Card2, Button2 } from '../common';
+import { Ionicons } from '@expo/vector-icons';
 
 export default class Payment extends Component {
     onButtonPress() {
@@ -18,7 +19,7 @@ export default class Payment extends Component {
                 <Header style={{ backgroundColor: '#f2960c' }} > 
                     <Left>
                         <Button transparent onPress={this.onBackButtonPress.bind(this)}>
-                            <Icon name='arrow-back' />
+                            <Ionicons name='md-arrow-back' style={styles.actionButtonIcon} />
                         </Button>
                     </Left>
                     <Body style={styles.bodyStyle}>
@@ -130,10 +131,15 @@ const styles = StyleSheet.create({
         fontSize: 28,
         alignSelf: 'center',
         fontWeight: 'bold'
-      },
-      bodyStyle: {
+    },
+    bodyStyle: {
         flex: 3.5,
         justifyContent: 'center',
         alignItems: 'center'
-      }
+    },
+    actionButtonIcon: {
+        fontSize: 20,
+        height: 22,
+        color: 'white',
+    },
 });
