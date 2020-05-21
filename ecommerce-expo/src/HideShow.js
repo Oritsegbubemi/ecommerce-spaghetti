@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { View } from 'react-native';
 import PasswordInputText from 'react-native-hide-show-password-input';
  
- 
 // use in your class
 export default class App extends Component {
     state = {
